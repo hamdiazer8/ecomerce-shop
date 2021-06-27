@@ -50,7 +50,7 @@ render(){
 		       <FormInput type='email' name='email' value={email} onChange={this.handelChange} label='email' required />
 		       <FormInput type='password' name='password' value={password} onChange={this.handelChange} label='password' required />
 		       <FormInput type='password' name='confirmPassword' value={confirmPassword} onChange={this.handelChange} label='confirm Password' required/>
-		       <CustomButton type='submit' > SIGN UP</CustomButton>
+		       <CustomButton type='button' > SIGN UP</CustomButton>
 		</form>
 		</div>)
 	
