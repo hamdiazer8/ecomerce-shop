@@ -12,7 +12,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utils';
 import {connect} from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 import {createStructuredSelector} from 'reselect';
-import CheckoutPage from './pages/checkout/checkout.component'
+import CheckoutPage from './pages/checkout/checkout-page.component'
 
 
 
