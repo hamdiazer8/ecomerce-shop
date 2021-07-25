@@ -22,7 +22,7 @@ handelChange=event =>{
 	handelSubmit=async event=>{
 		event.preventDefault();
 		const {displayName,email,password,confirmPassword}=this.state;
-		if(!password === confirmPassword){
+		if(password !== confirmPassword){
 			alert("the password and confirmPassword does'nt match")
 			return;
 		}
