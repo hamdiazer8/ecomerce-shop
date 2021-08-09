@@ -5,7 +5,7 @@ import {persistStore} from 'redux-persist';
 
 
 const middelwares=[];
-if(process.env.NODE_EN==='development'){
+if(process.env.NODE_ENV==='development'){
 	middelwares.push(logger);
 }
 

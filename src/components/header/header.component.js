@@ -8,9 +8,9 @@ import CartIcon from '../cart-icon/cart-icon.component';
 import {selectCartHidden} from '../../redux/cart/cart.selectors'
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
-import {HeaderContainer,LogoContainer,OptionsConatiner,OptionLink,OptionDiv} from './header.styles.js';
+import {HeaderContainer,LogoContainer,OptionsConatiner,OptionLink} from './header.styles.js';
 import {createStructuredSelector} from 'reselect';
-import {Link} from 'react-router-dom';
+
 
 
 
@@ -28,7 +28,7 @@ SHOP
 	CONTACT 
 </OptionLink>
 {
-	currentUser ? <OptionDiv onClick={()=>auth.signOut()}>SIGN OUT</OptionDiv> : <OptionLink to='/signin'>SIGN IN </OptionLink>
+	currentUser ? <OptionLink as='div' onClick={()=>auth.signOut()}>SIGN OUT</OptionLink> : <OptionLink to='/signin'>SIGN IN </OptionLink>
 }
 
 <CartIcon/>
